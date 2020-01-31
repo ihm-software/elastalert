@@ -8,7 +8,7 @@ Requirements
 
 - Elasticsearch
 - ISO8601 or Unix timestamped data
-- Python 2.7
+- Python 3.6
 - pip, see requirements.txt
 - Packages on Ubuntu 14.x: python-pip python-dev libffi-dev libssl-dev
 
@@ -142,9 +142,9 @@ Running the ``elastalert-test-rule`` tool will test that your config file succes
 
     $ elastalert-test-rule example_rules/example_frequency.yaml
 
-If you want to specify a configuration file to use, you can run it with the config flag.
+If you want to specify a configuration file to use, you can run it with the config flag::
 
-    $ elastalert-test-rule --config <path-to-config-file> example_rules/example_frequency.yaml.
+    $ elastalert-test-rule --config <path-to-config-file> example_rules/example_frequency.yaml
 
 The configuration preferences will be loaded as follows:
     1. Configurations specified in the yaml file.
