@@ -1415,7 +1415,9 @@ class ServiceNowAlerter(Alerter):
             "u_originating_group": self.rule["u_originating_group"],
             "u_division": self.rule["u_division"],
             "contact_type": self.rule["contact_type"],
-            "opened_by": self.rule["opened_by"]
+            "opened_by": self.rule["opened_by"],
+            "service_offering": self.rule["service_offering"],
+            "u_second_class": self.rule["u_second_class"]
         }
         try:
             response = requests.post(
